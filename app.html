@@ -1,0 +1,853 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Akc</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="" name="keywords">
+    <meta content="" name="description">
+
+    <!-- Favicon -->
+    <link href="img/favicon.ico" rel="icon">
+
+    <!-- Google Web Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@400;500&family=Jost:wght@500;600;700&display=swap" rel="stylesheet"> 
+
+    <!-- Icon Font Stylesheet -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+
+    <!-- Libraries Stylesheet -->
+    <link href="lib/animate/animate.min.css" rel="stylesheet">
+    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+
+    <!-- Customized Bootstrap Stylesheet -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Template Stylesheet -->
+    <link href="css/style.css" rel="stylesheet">
+
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/owl-carousel/1.3.3/owl.carousel.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/owl-carousel/1.3.3/owl.theme.min.css">
+<style>
+
+
+.montserrat-uniquifier {
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: weight;
+  font-style: normal;
+}
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+    .container-xxl  .hero-header img{
+        width: 580px;
+        margin-top: 10px;
+        margin-left: 660px;
+    height: 400px;
+        object-fit: cover;
+    }
+
+.container {
+    width: 90%;
+    margin: 0 auto;
+}
+
+/* Hero section */
+.hero-section img {
+object-fit: cover;
+width: 113%;
+margin-left: -73px;
+}
+
+/* Intro section */
+.intro-section {
+    text-align: center;
+    padding: 30px 0;
+    background-color: transparent; /* Keep transparent background */
+}
+
+.intro-content h2 {
+    font-size: 2rem; /* Match the subtitle font size */
+    color: #333; /* Darker color for the heading */
+    margin-bottom: 10px;
+}
+
+.intro-content .subtitle {
+    font-size: 1rem; /* Smaller subtitle */
+    color: #777; /* Subtle gray for the subtitle text */
+    margin-top: 10px;
+}
+
+/* Main content section */
+.main-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 40px 0;
+    background-color: transparent; 
+}
+
+.text-content {
+    width: 55%;
+    color: #333; /* Consistent font color */
+}
+
+.text-content h3 {
+    font-size: 2.5rem; /* Match heading font size */
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.text-content .highlight {
+    color: #00bfa5; /* Use a highlight color */
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+.text-content p {
+    font-size: 1rem; /* Base font size for paragraphs */
+    color: #555; /* Light gray for paragraph text */
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+.image-content {
+    width: 40%;
+}
+
+.image-content img {
+    width: 80%;
+    height: 50%;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .main-section {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .text-content {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .image-content {
+        width: 100%;
+    }
+}
+
+
+
+.container {
+            width: 90%;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 40px 0;
+          
+        }
+        
+        .dark-section {
+            background-color: #1c1c1e;
+            padding: 60px 0;
+            text-align: center;
+        }
+        
+        .features {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            flex-wrap: wrap;
+            margin-top: 40px;
+        }
+        
+        .feature-item {
+            color: #fff;
+            width: 22%; /* Adjusted width to fit 4 items */
+            text-align: center;
+        }
+        
+        .feature-item i {
+            font-size: 50px;
+            color: #ffcc00;
+            margin-bottom: 20px;
+        }
+        
+        .feature-item h3 {
+            margin: 20px 0 10px;
+        }
+        
+        .feature-item p {
+            font-size: 14px;
+            line-height: 1.5;
+        }
+        
+        .light-section {
+            background-color: #f5f5f5;
+            padding: 60px 0;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            position: relative; /* Enables image overlap */
+        }
+        
+        .text-section {
+            width: 50%;
+        }
+        
+        .text-section h2 {
+            color: #333;
+            font-size: 34px;
+            margin-bottom: 20px;
+        }
+        
+        .text-section ul {
+            list-style: none;
+        }
+        
+        .text-section ul li {
+            font-size: 18px;
+            margin-bottom: 10px;
+            padding-left: 20px;
+            position: relative;
+        }
+        
+        .text-section ul li::before {
+            content: '';
+            width: 10px;
+            height: 10px;
+            background-color: #ffcc00;
+            border-radius: 50%;
+            position: absolute;
+            left: 0;
+            top: 8px;
+        }
+        
+        .image-section {
+            width: 40%;
+            position: absolute;
+            right: 0;
+            height: 95%;
+            bottom: -30px; /* Image extends downwards */
+        }
+        
+        .image-section img {
+            width: 80%;
+            height: auto;
+            margin-bottom: 120px;
+
+            box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.1);
+        }
+        
+        @media (max-width: 768px) {
+            .features {
+                flex-direction: column;
+            }
+        
+            .feature-item {
+                width: 100%;
+                margin-bottom: 30px;
+            }
+        
+            .text-section, .image-section {
+                width: 100%;
+            }
+        
+            .image-section {
+                position: static;
+                margin-top: 20px;
+            }
+        }
+
+         /* Hero Section */
+         .hero {
+            background-color: #000000;
+            padding: 60px 20px;
+            text-align: center;
+            color: #fff;
+        }
+        .hero-section h2 {
+            color: #f5f5f5;
+            font-size: 2.5rem;
+            font-weight: bold;
+            margin-bottom: 20px;
+        }
+        .hero-section p {
+            font-size: 1.25rem;
+            margin-bottom: 20px;
+            color: #787777;
+        }
+        .hero-section button {
+            padding: 15px 30px;
+            background-color: #2a158b;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 1rem;
+        }
+        .hero-section button:hover {
+            background-color: #3c27cc;
+        }
+
+        /* Contact Form Section */
+        .contact-form-section {
+            padding: 60px 20px;
+            background-color: #f9f9f9;
+            text-align: center;
+        }
+        .contact-form-section h2 {
+            font-size: 2rem;
+            font-weight: bold;
+            margin-bottom: 20px;
+        }
+        .contact-form {
+            max-width: 600px;
+            margin: 0 auto;
+        }
+        .contact-form input, .contact-form textarea {
+            width: 100%;
+            padding: 15px;
+            margin: 10px 0;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            font-size: 1rem;
+        }
+        .contact-form button {
+            padding: 15px 30px;
+            background-color: #Fca311 ;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 1rem;
+        }
+        .contact-form button:hover {
+            background-color: #3c27cc;
+        }
+
+        /* Container for content */
+.containe {
+    max-width: 1200px;
+    margin: 0 auto;
+    background-color: #14213d;
+    padding: 20px;
+    text-align: center;
+}
+
+/* Heading style */
+h1 {
+    font-size: 36px;
+    font-weight: bold;
+    color: #Fca311;
+    margin-bottom: 20px;
+}
+
+/* Paragraph styling */
+p {
+    font-size: 18px;
+    color: white;
+    margin-bottom: 15px;
+    line-height: 1.8;
+}
+
+/* Highlight text style */
+.highlight {
+    color: #000;
+    font-weight: bold;
+}
+
+/* Section styling */
+.brand-visibility-section {
+    padding: 50px 0;
+    background-color: #14213d;
+    position: relative;
+}
+
+/* Decorative shapes */
+.brand-visibility-section::before, 
+.brand-visibility-section::after {
+    content: '';
+    position: absolute;
+    top: 20px;
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    background: #00c3ff;
+    opacity: 0.2;
+}
+
+.brand-visibility-section::before {
+    left: 5%;
+    top: 30px;
+}
+
+.brand-visibility-section::after {
+    right: 5%;
+    top: 50px;
+}
+
+.value-section {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 60px;
+
+      }
+      
+      .content-wrapper {
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+      }
+      
+      .text-content {
+        max-width: 50%;
+      }
+      
+      .text-content h1 {
+        font-size: 2.5rem;
+        font-weight: 700;
+        margin-bottom: 20px;
+      }
+      
+      .text-content p {
+        font-size: 1.2rem;
+        margin-bottom: 15px;
+      }
+      
+      .text-content .desc {
+        font-size: 1rem;
+        color: #dcdcdc;
+      }
+      
+      .features {
+        display: flex;
+        flex-wrap: wrap;
+        list-style: none;
+        gap: 10px;
+      }
+      
+      .features li {
+        font-size: 1rem;
+        width: 45%;
+      }
+      
+      .custom-quote-btn {
+        background-color: #14213d;
+        color: white;
+        padding: 12px 24px;
+        border: none;
+        border-radius: 8px;
+        font-size: 1.2rem;
+        cursor: pointer;
+        margin-top: 20px;
+      }
+      
+      .image-content img {
+        max-width: 100%;
+        height: auto;
+      }
+      
+      .tech-stack {
+        text-align: center;
+        padding: 40px;
+        background-color: #14213d;
+      }
+      
+      .tech-stack h2 {
+        font-size: 1.8rem;
+        margin-bottom: 20px;
+      }
+      
+      .logos {
+        display: flex;
+        justify-content: center;
+        gap: 30px;
+      }
+      
+      .logos img {
+        max-width: 100px;
+      }
+      
+    </style>
+</head>
+
+<body>
+    <div class="container-xxl bg-white p-0" data-bs-spy="scroll" data-bs-target=".navbar" data-bs-offset="51" >
+        <!-- Spinner Start -->
+        <div id="spinner" class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
+            <div class="spinner-grow text-primary" style="width: 3rem; height: 3rem;" role="status">
+                <span class="sr-only">Loading...</span>
+            </div>
+        </div>
+        <!-- Spinner End -->
+      
+        <nav class="navbar navbar-expand-lg  sticky bg-body-tertiary" style="background-color: #14213D;" >
+            <div class="container-fluid">
+         </a>  <div style="margin-bottom: -20px; ">
+         <a href="./index.html"><img src="./logooo.png" alt="" style="margin-left: 30px; height: 110px; width: 200px; object-fit: cover;">
+   </a> </div>     
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse " id="navbarNav">
+                <ul class="navbar-nav" style="margin-left: 180px; color: white; font-size: 15px;">
+                  <li class="nav-item mx-2">
+                    <a class="nav-link active" aria-current="page" href="aboutus.html" style="color: white;">ABOUT US</a>
+                  </li>
+                  <li class="nav-item  mx-2">
+                    <a class="nav-link" href="./pricing.html " style="color: white;">PRICING</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link mx-2" href="./contact us.html" style="color: white;">CONTACT US</a>
+                  </li>
+                  <li class="nav-item" >
+                  <button type="button" class="btn btn-outline-primary b1 mx-2">     <i class="fa fa-volume-control-phone" aria-hidden="true"></i>
+                    CALL US (800) 880-4109</button>
+                  </li>
+                  <li class="nav-item" >
+                    <button type="button" class="btn mx-2 b2" style="border: 2px solid rgb(62, 62, 180); border-radius: 4px black; background-color: #Fca311; color: black;"> REQUEST A CUSTOMQUOTE</button>
+                    </li>
+                </ul>
+              </div>
+            </div>
+            
+          </nav>
+    
+     
+    <nav class="nav2" style="background-color: #Fca311;  " >
+        <div class="container-fluid">
+            <ul class="nav justify-content-center" style="color: black;">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation"> <span class="navbar-toggler-icon"></span>
+                </button>
+    
+                <li class="nav-item">
+                  <a class="nav-link" href="./logobranding.html" style="color: black;">LOGO & BRANDING</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="./web.html" style="color: black;">WEBSITE DESIGN</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="./packages.html" style="color: black;">PRINTING & PACKAGING</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="./seo.html" style="color: black;">SEO</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="./app.html" style="color: black;">MOBILE APPS</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="./video.html" style="color: black;">VIDEO ANIMATION</a>
+                  </li>
+              </ul>
+        </div>
+    </nav>
+   
+   
+
+<div style="background-color: #14213d;">
+    <div class="container" >
+        <!-- Hero Section -->
+        <section class="hero-section" style="margin-top: -50px;">
+            
+            <img src="./Untitled design.png" alt="" style="width: 1200px; margin-left: -20px; margin-top: 10px;">
+            <a href="" class="btn  py-sm-3 px-4 px-sm-5 rounded-pill me-3 animated slideInLeft" style="background-color: #Fca311; color: white; margin-top: -260px; margin-left: 70px;">Let's Get Started</a>
+            <a href="" class="btn  py-sm-3 px-4 px-sm-5 rounded-pill animated slideInRight" style="background-color: #Fca311; color: white; margin-top: -260px;">Live Chat</a>
+        </section>
+  
+ 
+        <section class="brand-visibility-section" >
+            <div class="containe">
+                <h1>Increase Your Brand Visibility with Presence on Every Phone App Screen</h1>
+                <p>At <span class="highlight">Logo Zeal</span>, we develop a personalized platform for your business that curates maximum interactions between your targeted audience and business. We create mobile applications that reflect positively on your business identity in the market.</p>
+                <p>Through mobile applications, we create a path for users to follow and sustain an action to follow. We combine innovative layouts with exceptional coding and spare no bugs or loopholes in the mobile application. We create absolute game-changers for your business. With sheer experience in the market, our work is immensely recognized and trusted among the industries.</p>
+                <p>We create mobile apps that are coherent over all electronic devices and software.</p>
+            </div>
+        </section>
+    
+        <section class="value-section" style="background-color: #14213d;">
+            <div class="content-wrapper" style="background-color: #14213d;">
+              <div class="text-content" style="background-color: #14213d;">
+                <h1>Deliver Real Value</h1>
+                <p style="color: white;">Every element we add brings value to your business.</p>
+                <p class="desc">We deliver real-valued apps which are innately task-oriented and declutter the processes of purchasing or availing your business services. The apps were developed to function at full efficiency. With extensive knowledge of customer behavior, we know exactly what your target audience hopes for.</p>
+                <ul class="features" style="color: white;">
+                  <li>Flow of an intuitive app</li>
+                  <li>Relevant features</li>
+                  <li>All-purpose apps</li>
+                  <li>Simpler Interface</li>
+                  <li>Alternation in Layouts</li>
+                  <li>Convenience at best</li>
+                </ul>
+                <a href="" class="btn  py-sm-3 px-4 px-sm-5 rounded-pill animated slideInRight" style="background-color: #Fca311; color: white;">Request A Custom Quote</a>
+            </div>
+              <div class="image-content">
+                <img src="./linear-mobile-website.webp" alt="Mobile App">
+              </div>
+            </div>
+          </section>
+        
+        
+    <!-- Hero Section -->
+    <section class="hero" style="background-color: #14213d;">
+        <h2 style="color: #Fca311;">Welcome to Our Service</h2>
+        <p>Experience the best quality and service. We are committed to exceeding your expectations!</p>
+        <button type="submit" style="background-color: #Fca311;">Send Message</button>
+    </section>
+
+    <!-- Contact Form Section -->
+    <section class="contact-form-section" style="background-color: #14213d;">
+        <h2 style="color: #Fca311;">Contact Us</h2>
+        <form class="contact-form">
+            <input type="text" name="name" placeholder="Your Name" required>
+            <input type="email" name="email" placeholder="Your Email" required>
+            <textarea name="message" placeholder="Your Message" rows="5" required></textarea>
+            <button type="submit">Send Message</button>
+        </form>
+    </section>
+
+       <!-- Testimonial Start -->
+       <div class="hj" style="background-image: url(./background.png); ">
+        <br><br><br><br><br><br><br><br><br><br>
+         <div class="row" style=" margin-left: 360px; margin-top: -100px; width: 70%;">
+             <div class="col-md-offset-2 col-md-8 ">
+                 <h1 style="margin-left: 230px;">TESTIMONIAL</h1>
+                 <div id="testimonial-slider" class="owl-carousel">
+                     <div class="testimonial" style="margin-top: -90px;">
+                         <img src="Green Modern Web Design Studio Logo.png" alt="" width="300px">
+                         <p class="description">
+                             The website looks amazing! It exceeded all my expectations. Great job, team!
+                         </p>
+                         <h3 class="title">WILLIAMSON</h3>
+                         <span class="post">Web Developer</span>
+                     </div>
+  
+                     <div class="testimonial">
+                         <img src="Black Global Tech Internet Company Logo.png" alt="" width="300px">
+                         <p class="description">
+                             The professionalism and attention to detail were outstanding. Highly recommend!
+                         </p>
+                         <h3 class="title">KATRINA</h3>
+                         <span class="post">Web Designer</span>
+                         
+                     </div>
+  
+                     <div class="testimonial">
+                         <img src="Black and White Circle Business Logo.png" alt="" width="300px">
+                         <p class="description">
+                             I’ve worked with many developers, but this experience was top-notch.
+                         </p>
+                         <h3 class="title">JEREMY CLEN</h3>
+                         <span class="post">Web Developer</span>
+                     </div>
+                     <div class="testimonial">
+                         <img src="Blue Modern Digital Company Logo.png" alt="" width="300px">
+                         <p class="description">
+                             Our website went live on time, and the results are fantastic. Thank you
+                         </p>
+                         <h3 class="title">JEREMY CLEN</h3>
+                         <span class="post">Web Developer</span>
+                     </div>
+                     <div class="testimonial">
+                         <img src="Dark Blue Beige Circle Y2K Illustrative Class Logo.png" alt="" width="300px">
+                         <p class="description">
+                             Their design skills are second to none. Our web traffic has doubled!
+                         </p>
+                         <h3 class="title">JEREMY CLEN</h3>
+                         <span class="post">Web Developer</span>
+                     </div>
+                     <div class="testimonial">
+                         <img src="Black Illustrative Education Logo.png" alt="" width="300px">
+                         <p class="description">
+                             Excellent communication and even better execution. Truly impressed.
+                         </p>
+                         <h3 class="title">JEREMY CLEN</h3>
+                         <span class="post">Web Developer</span>
+                     </div>
+                 </div>
+             </div>
+         </div>
+     </div>
+ </div>
+</div>     
+    <!-- Testimonial End -->
+
+
+        <!-- Contact Start -->
+        <div class="container-xxl py-5" id="contact" style="background-color: #14213d;">
+            <div class="container py-5 px-lg-5">
+                <div class="text-center wow fadeInUp" data-wow-delay="0.1s">
+                    <h5 class=" fw-medium" style="color: white;">Contact Us</h5>
+                    <h1 class="mb-5" style="color: #Fca311;">Get In Touch!</h1>
+                </div>
+                <div class="row justify-content-center">
+                    <div class="col-lg-9">
+                        <div class="wow fadeInUp" data-wow-delay="0.3s">
+                            <p class="text-center mb-4" style="color: white;">The contact form is currently inactive. Get a functional and working contact form with Ajax & PHP in a few minutes. Just copy and paste the files, add a little code and you're done. <a href="" style="color: #Fca311;">Download Now</a>.</p>
+                            <form>
+                                <div class="row g-3">
+                                    <div class="col-md-6">
+                                        <div class="form-floating">
+                                            <input type="text" class="form-control" id="name" placeholder="Your Name">
+                                            <label for="name">Your Name</label>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div class="form-floating">
+                                            <input type="email" class="form-control" id="email" placeholder="Your Email">
+                                            <label for="email">Your Email</label>
+                                        </div>
+                                    </div>
+                                    <div class="col-12">
+                                        <div class="form-floating">
+                                            <input type="text" class="form-control" id="subject" placeholder="Subject">
+                                            <label for="subject">Subject</label>
+                                        </div>
+                                    </div>
+                                    <div class="col-12">
+                                        <div class="form-floating">
+                                            <textarea class="form-control" placeholder="Leave a message here" id="message" style="height: 150px"></textarea>
+                                            <label for="message">Message</label>
+                                        </div>
+                                    </div>
+                                    <div class="col-12 text-center">
+                                        <button class="btn rounded-pill py-3 px-5" type="submit" style="background-color: #Fca311; color: white;">Send Message</button>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Contact End -->
+        
+
+        <!-- Footer Start -->
+        <div style="background-color: #14213d;">
+            <div class="container py-5 px-lg-5" style="background-color: #14213d;">
+                <div class="row g-5">
+                    <div class="col-md-6 col-lg-3" style="color: white;">
+                        <h4 class=" mb-4" style="color: #Fca311;">Address</h4>
+                        <p><i class="fa fa-map-marker-alt me-3"></i>123 Street, New York, USA</p>
+                        <p><i class="fa fa-phone-alt me-3"></i>+012 345 67890</p>
+                        <p><i class="fa fa-envelope me-3"></i>info@example.com</p>
+                        <div class="d-flex pt-2">
+                            <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-twitter"></i></a>
+                            <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-facebook-f"></i></a>
+                            <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-instagram"></i></a>
+                            <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-linkedin-in"></i></a>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-3">
+                        <h4 class=" mb-4" style="color: #Fca311;">Quick Link</h4>
+                        <a class="btn text-white btn-link" href="">About Us</a>
+                        <a class="btn text-white btn-link" href="">Contact Us</a>
+                        <a class="btn text-white btn-link" href="">Privacy Policy</a>
+                        <a class="btn text-white btn-link" href="">Terms & Condition</a>
+                        <a class="btn text-white btn-link" href="">Career</a>
+                    </div>
+                    <div class="col-md-6 col-lg-3">
+                        <h4 class=" mb-4" style="color: #Fca311;">Popular Link</h4>
+                        <a class="btn text-white btn-link" href="">About Us</a>
+                        <a class="btn text-white btn-link" href="">Contact Us</a>
+                        <a class="btn text-white btn-link" href="">Privacy Policy</a>
+                        <a class="btn text-white btn-link" href="">Terms & Condition</a>
+                        <a class="btn text-white btn-link" href="">Career</a>
+                    </div>
+                    <div class="col-md-6 col-lg-3">
+                        <h4 class="mb-4" style="color: #Fca311;">Newsletter</h4>
+                        <p style="color: white;">Lorem ipsum dolor sit amet elit. Phasellus nec pretium mi. Curabitur facilisis ornare velit non vulpu</p>
+                        <div class="position-relative w-100 mt-3">
+                            <input class="form-control border-0 rounded-pill w-100 ps-4 pe-5" type="text" placeholder="Your Email" style="height: 48px;">
+                            <button type="button" class="btn shadow-none position-absolute top-0 end-0 mt-1 me-2"><i class="fa fa-paper-plane text-primary-gradient fs-4"></i></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="container px-lg-5">
+                <div class="copyright">
+                    <div class="row">
+                        <div class="col-md-6 text-center text-white text-md-start mb-3 mb-md-0">
+                            &copy; <a class="border-bottom" href="#" style="color: white;">Akc</a>, All Right Reserved. 
+							
+						
+							Designed By <a class="border-bottom" href=""></a>
+                            </br>
+                            Distributed By <a class="border-bottom" href="" target="_blank"></a>
+                        </div>
+                        <div class="col-md-6 text-center text-md-end">
+                            <div class="footer-menu" style="color: white;">
+                                <a href="" style="color: white;">Home</a>
+                                <a href="" style="color: white;">Cookies</a>
+                                <a href="" style="color: white;">Help</a>
+                                <a href="" style="color: white;">FQAs</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Footer End -->
+
+
+        <!-- Back to Top -->
+        <a href="#" class="btn btn-lg btn-lg-square back-to-top pt-2" style="background-color: #Fca311;"><i class="bi bi-arrow-up text-white"></i></a>
+    </div>
+</div>
+    <!-- JavaScript Libraries -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="lib/wow/wow.min.js"></script>
+    <script src="lib/easing/easing.min.js"></script>
+    <script src="lib/waypoints/waypoints.min.js"></script>
+    <script src="lib/counterup/counterup.min.js"></script>
+    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+
+    <!-- Template Javascript -->
+    <script src="js/main.js"></script>
+
+
+    <!-- JavaScript Libraries -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="lib/wow/wow.min.js"></script>
+    <script src="lib/easing/easing.min.js"></script>
+    <script src="lib/waypoints/waypoints.min.js"></script>
+    <script src="lib/counterup/counterup.min.js"></script>
+    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+
+    <!-- Template Javascript -->
+    <script src="js/main.js"></script>
+
+
+    <script type="text/javascript" src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/owl-carousel/1.3.3/owl.carousel.min.js"></script>d
+<script>
+    
+$(document).ready(function(){
+    $("#testimonial-slider").owlCarousel({
+        items:1,
+        itemsDesktop:[1000,1],
+        itemsDesktopSmall:[979,1],
+        itemsTablet:[768,1],
+        pagination:true,
+        navigation:true,
+        navigationText:["",""],
+        slideSpeed:1000,
+        autoPlay:true
+    });
+});    
+    
+    </script>
+</body>
+
+</html>
