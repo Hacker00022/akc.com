@@ -1,0 +1,228 @@
+/********** Template CSS **********/
+:root {
+    --primary: #4294E3;
+    --secondary: #8F12FD;
+    --light: #F0F6FF;
+    --dark: #262B47;
+}
+
+body {
+    background-color: #000e2e;
+}
+
+/*** Spinner ***/
+#spinner {
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity .5s ease-out, visibility 0s linear .5s;
+    z-index: 99999;
+}
+
+#spinner.show {
+    transition: opacity .5s ease-out, visibility 0s linear 0s;
+    visibility: visible;
+    opacity: 1;
+}
+
+/*** Heading ***/
+h1, h2, .fw-bold {
+    font-weight: 700 !important;
+}
+
+h3, h4, .fw-semi-bold {
+    font-weight: 600 !important;
+}
+
+h5, h6, .fw-medium {
+    font-weight: 500 !important;
+}
+
+/*** Button ***/
+.btn {
+    transition: .5s;
+}
+
+.btn.btn-primary-gradient, .btn.btn-secondary-gradient {
+    position: relative;
+    overflow: hidden;
+    border: none;
+    color: #c9b115;
+    z-index: 1;
+}
+
+.btn.btn-primary-gradient::after, .btn.btn-secondary-gradient::after {
+    position: absolute;
+    content: "";
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    transition: .5s;
+    z-index: -1;
+    opacity: 0;
+}
+
+.btn.btn-primary-gradient, .btn.btn-secondary-gradient::after {
+    background: linear-gradient(to bottom right, var(--primary), var(--secondary));
+}
+
+.btn.btn-secondary-gradient, .btn.btn-primary-gradient::after {
+    background: linear-gradient(to bottom right, var(--secondary), var(--primary));
+}
+
+.btn.btn-primary-gradient:hover::after, .btn.btn-secondary-gradient:hover::after {
+    opacity: 1;
+}
+
+.btn-square {
+    width: 38px;
+    height: 38px;
+}
+
+.btn-sm-square {
+    width: 32px;
+    height: 32px;
+}
+
+.btn-lg-square {
+    width: 48px;
+    height: 48px;
+}
+
+.btn-square, .btn-sm-square, .btn-lg-square {
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: normal;
+    border-radius: 50px;
+}
+
+.back-to-top {
+    position: fixed;
+    display: none;
+    right: 45px;
+    bottom: 45px;
+    z-index: 99;
+    border: none;
+    background-color: #ffbb00;
+}
+
+/*** Navbar ***/
+.navbar-light .navbar-nav .nav-link {
+    position: relative;
+    margin-right: 25px;
+    padding: 45px 0;
+    font-family: 'Jost', sans-serif;
+    font-size: 18px;
+    font-weight: 500;
+    color: var(--light) !important;
+    outline: none;
+    transition: .5s;
+}
+
+.navbar-light .navbar-nav .nav-link::before {
+    position: absolute;
+    content: "";
+    width: 0;
+    height: 0;
+    top: -10px;
+    left: 50%;
+    transform: translateX(-50%);
+    border: 10px solid;
+    border-color: var(--light) transparent transparent transparent;
+    transition: .5s;
+}
+
+.sticky-top.navbar-light .navbar-nav .nav-link {
+    padding: 20px 0;
+    color: var(--dark) !important;
+}
+
+.navbar-light .navbar-nav .nav-link:hover::before,
+.navbar-light .navbar-nav .nav-link.active::before {
+    top: 0;
+}
+
+.navbar-light .navbar-brand h1 {
+    color: #FFFFFF;
+}
+
+.navbar-light .navbar-brand img {
+    max-height: 60px;
+    transition: .5s;
+}
+
+.sticky-top.navbar-light .navbar-brand img {
+    max-height: 45px;
+}
+
+/*** Responsive Adjustments ***/
+@media (max-width: 768px) {
+    /* Adjust navbar padding and font size for smaller screens */
+    .navbar-light .navbar-nav .nav-link {
+        padding: 10px 0;
+        font-size: 16px;
+    }
+
+    /* Adjust button sizes for mobile */
+    .btn-square {
+        width: 32px;
+        height: 32px;
+    }
+
+    .btn-lg-square {
+        width: 38px;
+        height: 38px;
+    }
+
+    /* Adjust container margins for mobile */
+    .cont2 {
+        height: auto;
+        margin-top: 50px;
+        padding: 20px;
+    }
+
+    .cont2 h1 {
+        font-size: 4em;
+        margin-left: 20px;
+        text-align: center;
+    }
+
+    /* Adjust arrow size for mobile */
+    .cont2 .row .arrow {
+        font-size: 50px;
+        margin-top: 30px;
+    }
+
+    /* Footer background scaling for mobile */
+    .footer {
+        padding-top: 4rem;
+        background-size: contain;
+    }
+}
+
+/*** Larger screen adjustments ***/
+@media (min-width: 1200px) {
+    .navbar-light .navbar-nav .nav-link {
+        font-size: 20px;
+    }
+
+    .cont2 h1 {
+        font-size: 12em;
+    }
+
+    .cont2 .row .arrow {
+        font-size: 120px;
+    }
+}
+
+/*** Other Component Adjustments ***/
+.feature-item:hover {
+    margin-top: -10px; /* Adjust hover effect */
+}
+
+.screenshot-carousel {
+    max-width: 100%; /* Ensure carousel fits on smaller screens */
+    height: auto;
+}

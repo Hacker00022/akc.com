@@ -1,0 +1,1403 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Akc</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="" name="keywords">
+    <meta content="" name="description">
+
+    <!-- Favicon -->
+    <link href="img/favicon.ico" rel="icon">
+
+    <!-- Google Web Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@400;500&family=Jost:wght@500;600;700&display=swap" rel="stylesheet"> 
+
+    <!-- Icon Font Stylesheet -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+
+    <!-- Libraries Stylesheet -->
+    <link href="lib/animate/animate.min.css" rel="stylesheet">
+    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+
+    <!-- Customized Bootstrap Stylesheet -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Template Stylesheet -->
+    <link href="css/style.css" rel="stylesheet">
+
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/owl-carousel/1.3.3/owl.carousel.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/owl-carousel/1.3.3/owl.theme.min.css">
+<style>
+
+
+.montserrat-uniquifier {
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: weight;
+  font-style: normal;
+}
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+    .container-xxl  .hero-header img{
+        width: 580px;
+        margin-top: 10px;
+        margin-left: 660px;
+    height: 400px;
+        object-fit: cover;
+    }
+
+.container {
+    width: 90%;
+    margin: 0 auto;
+}
+
+/* Hero section */
+.hero-section img {
+object-fit: cover;
+width: 113%;
+margin-left: -73px;
+}
+
+/* Intro section */
+.intro-section {
+    text-align: center;
+    padding: 30px 0;
+    background-color: transparent; /* Keep transparent background */
+}
+
+.intro-content h2 {
+    font-size: 2rem; /* Match the subtitle font size */
+    color: #333; /* Darker color for the heading */
+    margin-bottom: 10px;
+}
+
+.intro-content .subtitle {
+    font-size: 1rem; /* Smaller subtitle */
+    color: #777; /* Subtle gray for the subtitle text */
+    margin-top: 10px;
+}
+
+/* Main content section */
+.main-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 40px 0;
+    background-color: transparent; 
+}
+
+.text-content {
+    width: 55%;
+    color: #333; /* Consistent font color */
+}
+
+.text-content h3 {
+    font-size: 2.5rem; /* Match heading font size */
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.text-content .highlight {
+    color: #00bfa5; /* Use a highlight color */
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+.text-content p {
+    font-size: 1rem; /* Base font size for paragraphs */
+    color: #555; /* Light gray for paragraph text */
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+.image-content {
+    width: 40%;
+}
+
+.image-content img {
+    width: 80%;
+    height: 50%;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .main-section {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .text-content {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .image-content {
+        width: 100%;
+    }
+}
+
+
+
+.container {
+            width: 90%;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 40px 0;
+          
+        }
+        
+        .dark-section {
+            background-color: #1c1c1e;
+            padding: 60px 0;
+            text-align: center;
+        }
+        
+        .features {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            flex-wrap: wrap;
+            margin-top: 40px;
+        }
+        
+        .feature-item {
+            color: #fff;
+            width: 22%; /* Adjusted width to fit 4 items */
+            text-align: center;
+        }
+        
+        .feature-item i {
+            font-size: 50px;
+            color: #ffcc00;
+            margin-bottom: 20px;
+        }
+        
+        .feature-item h3 {
+            margin: 20px 0 10px;
+        }
+        
+        .feature-item p {
+            font-size: 14px;
+            line-height: 1.5;
+        }
+        
+        .light-section {
+            background-color: #f5f5f5;
+            padding: 60px 0;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            position: relative; /* Enables image overlap */
+        }
+        
+        .text-section {
+            width: 50%;
+        }
+        
+        .text-section h2 {
+            color: #333;
+            font-size: 34px;
+            margin-bottom: 20px;
+        }
+        
+        .text-section ul {
+            list-style: none;
+        }
+        
+        .text-section ul li {
+            font-size: 18px;
+            margin-bottom: 10px;
+            padding-left: 20px;
+            position: relative;
+        }
+        
+        .text-section ul li::before {
+            content: '';
+            width: 10px;
+            height: 10px;
+            background-color: #ffcc00;
+            border-radius: 50%;
+            position: absolute;
+            left: 0;
+            top: 8px;
+        }
+        
+        .image-section {
+            width: 40%;
+            position: absolute;
+            right: 0;
+            height: 95%;
+            bottom: -30px; /* Image extends downwards */
+        }
+        
+        .image-section img {
+            width: 80%;
+            height: auto;
+            margin-bottom: 120px;
+
+            box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.1);
+        }
+        
+        @media (max-width: 768px) {
+            .features {
+                flex-direction: column;
+            }
+        
+            .feature-item {
+                width: 100%;
+                margin-bottom: 30px;
+            }
+        
+            .text-section, .image-section {
+                width: 100%;
+            }
+        
+            .image-section {
+                position: static;
+                margin-top: 20px;
+            }
+        }
+
+         /* Hero Section */
+         .hero {
+            background-color: #000000;
+            padding: 60px 20px;
+            text-align: center;
+            color: #fff;
+        }
+        .hero-section h2 {
+            color: #f5f5f5;
+            font-size: 2.5rem;
+            font-weight: bold;
+            margin-bottom: 20px;
+        }
+        .hero-section p {
+            font-size: 1.25rem;
+            margin-bottom: 20px;
+            color: #787777;
+        }
+        .hero-section button {
+            padding: 15px 30px;
+            background-color: #2a158b;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 1rem;
+        }
+        .hero-section button:hover {
+            background-color: #3c27cc;
+        }
+
+        /* Contact Form Section */
+        .contact-form-section {
+            padding: 60px 20px;
+            background-color: #f9f9f9;
+            text-align: center;
+        }
+        .contact-form-section h2 {
+            font-size: 2rem;
+            font-weight: bold;
+            margin-bottom: 20px;
+        }
+        .contact-form {
+            max-width: 600px;
+            margin: 0 auto;
+        }
+        .contact-form input, .contact-form textarea {
+            width: 100%;
+            padding: 15px;
+            margin: 10px 0;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            font-size: 1rem;
+        }
+        .contact-form button {
+            padding: 15px 30px;
+            background-color: #Fca311 ;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 1rem;
+        }
+        .contact-form button:hover {
+            background-color: #3c27cc;
+        }
+
+
+        
+h2{
+    font-size: 5em;
+    color: #Fca311;
+    text-transform: none;
+    text-align: center;
+    display: flex;
+}
+h2 span{
+    transition: 1.5s;
+}
+h2:hover span{
+    filter: blur(20px);
+    opacity: 0;
+    transform: scale(2);
+}
+h2 span:nth-Child(10n+1)
+{
+    transition-delay: 0s;
+}
+h2 span:nth-Child(10n+2)
+{
+    transition-delay: 0.1s;
+}h2 span:nth-Child(10n+3)
+{
+    transition-delay: 0.2s;
+}h2 span:nth-Child(10n+4)
+{
+    transition-delay: 0.3s;
+}h2 span:nth-Child(10n+5)
+{
+    transition-delay: 0.4s;
+}h2 span:nth-Child(10n+6)
+{
+    transition-delay: 0.5s;
+}h2 span:nth-Child(10n+7)
+{
+    transition-delay: 0.6s;
+}h2 span:nth-Child(10n+8)
+{
+    transition-delay: 0.7s;
+}h2 span:nth-Child(10n+9)
+{
+    transition-delay: 0.8s;
+}h2 span:nth-Child(10n+10)
+{
+    transition-delay: 0.9s;
+}
+
+
+ /* Header */
+ .header {
+      position: relative;
+      background-color: #fff;
+      padding: 60px 20px 100px;
+      text-align: center;
+      box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+      overflow: hidden;
+    }
+
+    .header::before, .header::after {
+      content: '';
+      position: absolute;
+      border-radius: 50%;
+      animation: float 10s infinite ease-in-out;
+    }
+
+    .header::before {
+      top: 20px;
+      left: 30px;
+      width: 100px;
+      height: 100px;
+      background: #00d4ff;
+      opacity: 0.3;
+      animation: moveCircle1 8s infinite ease-in-out;
+    }
+
+    .header::after {
+      bottom: 0;
+      right: 0;
+      width: 150px;
+      height: 150px;
+      background: transparent;
+      border: 5px solid #d9d5d5;
+      animation: moveCircle2 12s infinite ease-in-out;
+    }
+
+    .header h1 {
+      font-size: 3.5rem;
+      color: #222;
+      font-weight: bold;
+    }
+
+    .header p {
+      color: #666;
+      font-size: 1.3rem;
+      max-width: 800px;
+      margin: 20px auto 0;
+    }
+
+    .header hr {
+      width: 50px;
+      height: 3px;
+      background-color: #ff4a4a;
+      border: none;
+      margin: 30px auto;
+    }
+
+    /* Circle Movement Animations */
+    @keyframes moveCircle1 {
+      0% {
+        transform: translateY(0) translateX(0);
+      }
+      50% {
+        transform: translateY(-30px) translateX(20px);
+      }
+      100% {
+        transform: translateY(0) translateX(0);
+      }
+    }
+
+    @keyframes moveCircle2 {
+      0% {
+        transform: translateY(0) translateX(0);
+      }
+      50% {
+        transform: translateY(20px) translateX(-25px);
+      }
+      100% {
+        transform: translateY(0) translateX(0);
+      }
+    }
+
+    /* Section */
+    .section {
+      padding: 80px 20px;
+      background-color: #fff;
+      margin-top: 30px;
+      border-radius: 8px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+      max-width: 1200px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    .section-title {
+      text-align: center;
+      font-size: 2.5rem;
+      color: #222;
+      margin-bottom: 50px;
+    }
+
+    .section-title span {
+      color: #ff4a4a;
+      border-bottom: 2px solid #ff4a4a;
+      margin-left: 10px;
+      padding-bottom: 5px;
+    }
+
+    .content {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    /* Text Content */
+    .text-content {
+      flex: 1;
+      max-width: 50%;
+      padding-right: 30px;
+    }
+
+    .text-content p {
+      color: #555;
+      font-size: 1.2rem;
+      margin-bottom: 20px;
+    }
+
+    .text-content ul {
+      list-style-type: none;
+      padding: 0;
+      margin-bottom: 30px;
+    }
+
+    .text-content ul li {
+      font-size: 1.1rem;
+      color: #444;
+      margin-bottom: 10px;
+      position: relative;
+      padding-left: 30px;
+    }
+
+    .text-content ul li::before {
+      content: "\f058";
+      font-family: "FontAwesome";
+      color: #ff4a4a;
+      position: absolute;
+      left: 0;
+      top: 0;
+      font-size: 1.2rem;
+      line-height: 1.2rem;
+    }
+
+    .cta-button {
+      background-color: #6200ea;
+      color: white;
+      padding: 15px 40px;
+      border: none;
+      border-radius: 5px;
+      font-size: 1.2rem;
+      text-decoration: none;
+      display: inline-block;
+      transition: background-color 0.3s ease;
+    }
+
+    .cta-button:hover {
+      background-color: #3700b3;
+    }
+
+    /* Image Content */
+    .image-content {
+      flex: 1;
+      max-width: 50%;
+      text-align: center;
+    }
+
+    .image-content img {
+      max-width: 100%;
+      border-radius: 10px;
+      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    }
+
+    /* Media Queries */
+    @media (max-width: 992px) {
+      .content {
+        flex-direction: column;
+      }
+
+      .text-content, .image-content {
+        max-width: 100%;
+        padding: 0;
+      }
+
+      .text-content {
+        margin-bottom: 30px;
+      }
+    }
+
+    @media (max-width: 576px) {
+      .header h1 {
+        font-size: 2.2rem;
+      }
+
+      .header p {
+        font-size: 1rem;
+      }
+
+      .section-title {
+        font-size: 2rem;
+      }
+
+      .text-content p, .text-content ul li {
+        font-size: 1rem;
+      }
+
+      .cta-button {
+        padding: 12px 30px;
+        font-size: 1rem;
+      }
+    }
+
+    h1 {
+            font-family: 'Playfair Display', serif;
+            font-size: 2.5rem;
+            color: #6f42c1;
+        }
+
+        .section-heading {
+            font-size: 2rem;
+            font-weight: bold;
+            text-align: center;
+            margin-top: 2rem;
+            color: #6f42c1;
+        }
+
+        .step-card {
+            padding: 2rem;
+            border-radius: 15px;
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+            background-color: white;
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+
+        .step-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.2);
+        }
+
+        .step-number {
+            font-size: 2rem;
+            font-weight: bold;
+            color: #ff4b5c;
+        }
+
+        .icon {
+            height: 80px;
+        }
+
+        .custom-quote-btn, .project-btn {
+            font-weight: bold;
+            padding: 10px 20px;
+            border-radius: 50px;
+        }
+
+        .custom-quote-btn {
+            background-color: #6f42c1;
+            color: white;
+            transition: background-color 0.3s;
+        }
+
+        .custom-quote-btn:hover {
+            background-color: #5a32a1;
+        }
+
+        .project-btn {
+            background-color: #6c757d;
+            color: white;
+            transition: background-color 0.3s;
+        }
+
+        .project-btn:hover {
+            background-color: #5a6268;
+        }
+
+        .help-button {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            background-color: #007bff;
+            color: white;
+            border-radius: 50%;
+            padding: 15px;
+            font-size: 1.5rem;
+            text-decoration: none;
+            box-shadow: 0 5px 15px rgba(0, 123, 255, 0.3);
+            transition: background-color 0.3s, transform 0.3s;
+        }
+
+        .help-button:hover {
+            background-color: #0056b3;
+            transform: scale(1.1);
+        }
+
+        .cor{
+    width: 95%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.cor .h1{
+    display: block;
+    width: 100%;
+    text-align: center;
+    color: #FCA311;
+    font-size: 50px;
+}
+.cor .box{
+    width: 30%;
+    height: 400px;
+    background: #000;
+    background-position: top;
+    transition: ease-in-out 1s;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+.cor .box.box1{
+ background: url(web-large-2.jpg);
+ background-size: cover;
+}
+.cor .box.box2{
+    background: url(web-large-1.jpg);
+    background-size: cover;
+   }
+ 
+   .cor .box.box3{
+    background: url(web-large-3.jpg);
+    background-size: cover;
+   }
+   .cor .box.box4{
+    background: url(web-large-4.jpg);
+    background-size: cover;
+   }
+   .cor .box.box5{
+    background: url(web-large-5.jpg);
+    background-size: cover;
+   }
+   .cor .box.box6{
+    background: url(web-large-6.jpg);
+    background-size: cover;
+   }
+   .cor .box.box7{
+    background: url(web-large-7.jpg);
+    background-size: cover;
+   }
+   .cor .box.box8{
+    background: url(web-large-8.jpg);
+    background-size: cover;
+   }
+   .cor .box.box9{
+    background: url(web-large-09.jpg);
+    background-size: cover;
+   }
+   .cor .box.box10{
+    background: url(web-large-10.jpg);
+    background-size: cover;
+   }
+   .cor .box:hover{
+    background-position: bottom;
+
+   }
+    </style>
+</head>
+
+<body>
+    <div class="container-xxl bg-white p-0" data-bs-spy="scroll" data-bs-target=".navbar" data-bs-offset="51" >
+        <!-- Spinner Start -->
+        <div id="spinner" class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
+            <div class="spinner-grow text-primary" style="width: 3rem; height: 3rem;" role="status">
+                <span class="sr-only">Loading...</span>
+            </div>
+        </div>
+        <!-- Spinner End -->
+      
+        <nav class="navbar navbar-expand-lg  sticky bg-body-tertiary" style="background-color: #14213D;" >
+            <div class="container-fluid">
+         </a>  <div style="margin-bottom: -20px; ">
+         <a href="./index.html"><img src="./logooo.png" alt="" style="margin-left: 30px; height: 110px; width: 200px; object-fit: cover;">
+   </a> </div>     
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse " id="navbarNav">
+                <ul class="navbar-nav" style="margin-left: 180px; color: white; font-size: 15px;">
+                  <li class="nav-item mx-2">
+                    <a class="nav-link active" aria-current="page" href="aboutus.html" style="color: white;">ABOUT US</a>
+                  </li>
+                  <li class="nav-item  mx-2">
+                    <a class="nav-link" href="./pricing.html " style="color: white;">PRICING</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link mx-2" href="./contact us.html" style="color: white;">CONTACT US</a>
+                  </li>
+                  <li class="nav-item" >
+                  <button type="button" class="btn btn-outline-primary b1 mx-2">     <i class="fa fa-volume-control-phone" aria-hidden="true"></i>
+                    CALL US (800) 880-4109</button>
+                  </li>
+                  <li class="nav-item" >
+                    <button type="button" class="btn mx-2 b2" style="border: 2px solid rgb(62, 62, 180); border-radius: 4px black; background-color: #Fca311; color: black;"> REQUEST A CUSTOMQUOTE</button>
+                    </li>
+                </ul>
+              </div>
+            </div>
+            
+          </nav>
+    
+     
+    <nav class="nav2" style="background-color: #Fca311;  " >
+        <div class="container-fluid">
+            <ul class="nav justify-content-center" style="color: black;">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation"> <span class="navbar-toggler-icon"></span>
+                </button>
+    
+                <li class="nav-item">
+                  <a class="nav-link" href="./logobranding.html" style="color: black;">LOGO & BRANDING</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="./web.html" style="color: black;">WEBSITE DESIGN</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="./packages.html" style="color: black;">PRINTING & PACKAGING</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="./seo.html" style="color: black;">SEO</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="./app.html" style="color: black;">MOBILE APPS</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="./video.html" style="color: black;">VIDEO ANIMATION</a>
+                  </li>
+              </ul>
+        </div>
+    </nav>
+   
+
+<div style="background-color: #14213D;">
+    <div class="container" >
+        <!-- Hero Section -->
+        <div class="container-xxl  hero-header" style="background-color: #14213D; margin-left: -110px;">
+            <img src="./banner.jpg" alt="">
+            <div class="container px-lg-5">
+                <div class="row g-5">
+                    <div class="col-lg-8 text-center text-lg-start" >
+                        <h1 class=" mb-4 animated slideInDown" style="font-size: 70px; margin-top: -440px; color: #Fca311; "> <h2>
+                            <span>R</span>
+                            <span>e</span>
+                            <span>b</span>
+                            <span>e</span>
+                            <span>l</span>
+                        </h2>
+                        <h2>
+                            <br><b><br><br></b>
+                            <span>Against</span>
+                            <span>Boring</span>
+                            <span>.</span>
+                            </h1></h2>
+                        <p class="text-white pb-3 animated slideInDown" style="margin-top: -60px;">The Link To Your Digital Future</p>
+                        <a href="" class="btn  py-sm-3 px-4 px-sm-5 rounded-pill me-3 animated slideInLeft" style="background-color: #Fca311; color: white;">Let's Get Started</a>
+                        <a href="" class="btn  py-sm-3 px-4 px-sm-5 rounded-pill animated slideInRight" style="background-color: #Fca311; color: white;">Live Chat</a>
+                    </div>
+
+                    </div>
+                </div>
+            </div>
+
+
+            <header class="header" style="background-color: #14213D;">
+                <h1 style="color: #Fca311;">Custom Web Design & Development Services In USA</h1>
+                <hr style="color: #Fca311;">
+                <p style="color: white;">
+                  Engage your audience with appealing website design and responsive development. Let our experts enhance your online presence and credibility with desktop compatibility and mobile responsiveness.
+                </p>
+              </header>
+            
+              <!-- CMS Website Section -->
+              <section class="section" style="background-color: #14213D;">
+                <h2 class="section-title" style="color: white;">CMS Website <span style="color: #Fca311;">Development</span></h2>
+                <div class="content">
+                  <div class="text-content">
+                    <p style="color: white;">
+                      Get CMS Website for a seamless functionality, contribute, schedule, or edit. We provide CMS websites to ensure web performance and flexibility.
+                    </p>
+                    <ul style="color: white;">
+                      <li style="color: white;">Simplified Redesigning</li>
+                      <li style="color: white;">Time-Saving Maintenance</li>
+                      <li style="color: white;">Easy Collaboration</li>
+                      <li style="color: white;">All-inclusive Marketing Strategy</li>
+                      <li style="color: white;">Multiple Access</li>
+                      <li style="color: white;">Streamlined Workflow</li>
+                    </ul>
+                    <a href="#" class="cta-button" style="background-color: #Fca311;">Request a Custom Quote</a>
+                  </div>
+                  <div class="image-content">
+                    <img src="./web000.png" alt="CMS Website Design">
+                  </div>
+                </div>
+              </section>
+
+              <div class="container">
+                <!-- Top section with the quote buttons -->
+                <div class="text-center my-5">
+                    <h1 style="color: #Fca311;">Let Us Give Your Brand An Identity That Speaks It All For You!</h1>
+                    <p class="lead" style="color: white;">We transform creative ideas into stunning realities.</p>
+                    <button class="btn custom-quote-btn me-2" style="background-color: #Fca311;">Request a Custom Quote</button>
+                    <button class="btn project-btn " style="background-color: #Fca311;">View All Projects</button>
+                </div>
+        
+                
+           <!-- Pricing Start -->
+           <div class="container-xxl py-5" id="pricing " style="background-color: #14213D;">
+            <div class="container py-5 px-lg-5">
+                <div class="text-center wow fadeInUp" data-wow-delay="0.1s">
+                    <h5 class=" fw-medium" style="color: #Fca311 ; font-size: 40px; font-weight: bold;">Crafting Perfect Logo Packages
+                        for Corporations Globally</h5>
+                    <h1 class="mb-5" style="color: white ; font-weight: 100px; font-size: 20px;">Our team of experts focus on client and customer satisfaction as the ultimate goal for our projects.
+                        This is one of the many reasons why our work is globally acclaimed and recognized.</h1>
+                </div>
+                <div class="tab-class text-center pricing wow fadeInUp" data-wow-delay="0.1s">
+                    
+                    <div class="tab-content text-start">
+                        <div id="tab-1" class="tab-pane fade show p-0 active">
+                            <div class="row g-4">
+                                <div class="col-lg-4">
+                                    <div class=" rounded" style="background-color: #708090;">
+                                        <div class="border-bottom p-4 mb-4">
+                                            <h4 class=" mb-1" style="color: #Fca311;">Starter Plan</h4>
+                                            <span style="color: white;">Powerful & Awesome Features</span>
+                                        </div>
+                                        <div class="p-4 pt-0">
+                                            <h1 class="mb-3" style="color: #Fca311;">
+                                                <small class="align-top" style="font-size: 22px; line-height: 45px;">$</small>14.99<small
+                                                    class="align-bottom" style="font-size: 16px; line-height: 40px;">/ Month</small>
+                                            </h1>
+                                            <div style="color: white;">
+                                            <div class="d-flex justify-content-between mb-3"><span>HTML5 & CSS3</span><i class="fa fa-check  pt-1" style="color: #Fca311;"></i></div>
+                                            <div class="d-flex justify-content-between mb-3"><span>Bootstrap v5</span><i class="fa fa-check  pt-1" style="color: #Fca311;"></i></div>
+                                            <div class="d-flex justify-content-between mb-3"><span>Responsive Layout</span><i class="fa fa-check  pt-1" style="color: #Fca311;"></i></div>
+                                            <div class="d-flex justify-content-between mb-2"><span>Cross-browser Support</span><i class="fa fa-check pt-1" style="color: #Fca311;"></i></div>
+                                            <a href="" class="btn rounded-pill py-2 px-4 mt-4" style="background-color: #Fca311; color: white;">Get Started</a>
+                                        </div>
+                                    </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-4">
+                                    <div class=" rounded border" style="background-color: #708090;">
+                                        <div class="border-bottom p-4 mb-4">
+                                            <h4 class=" mb-1" style="color: #Fca311;">Advance Plan</h4>
+                                            <span style="color: white;">Powerful & Awesome Features</span>
+                                        </div>
+                                        <div class="p-4 pt-0">
+                                            <h1 class="mb-3" style="color: #Fca311;">
+                                                <small class="align-top" style="font-size: 22px; line-height: 45px;">$</small>24.99<small
+                                                    class="align-bottom" style="font-size: 16px; line-height: 40px;">/ Month</small>
+                                            </h1>
+                                            <div style="color: white;">
+                                            <div class="d-flex justify-content-between mb-3"><span>HTML5 & CSS3</span><i class="fa fa-check  pt-1" style="color: #Fca311;"></i></div>
+                                            <div class="d-flex justify-content-between mb-3"><span>Bootstrap v5</span><i class="fa fa-check  pt-1" style="color: #Fca311;"></i></div>
+                                            <div class="d-flex justify-content-between mb-3"><span>Responsive Layout</span><i class="fa fa-check  pt-1" style="color: #Fca311;"></i></div>
+                                            <div class="d-flex justify-content-between mb-2"><span>Cross-browser Support</span><i class="fa fa-check  pt-1" style="color: #Fca311;"></i></div>
+                                            <a href="" class="btn rounded-pill py-2 px-4 mt-4" style="background-color: #Fca311; color: white;">Get Started</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                </div>
+                                <div class="col-lg-4">
+                                    <div class=" rounded" style="background-color: #708090;">
+                                        <div class="border-bottom p-4 mb-4">
+                                            <h4 class=" mb-1" style="color: #Fca311;">Premium Plan</h4>
+                                            <span style="color: white;">Powerful & Awesome Features</span>
+                                        </div>
+                                        <div class="p-4 pt-0">
+                                            <h1 class="mb-3" style="color: #Fca311;">
+                                                <small class="align-top" style="font-size: 22px; line-height: 45px;">$</small>34.99<small
+                                                    class="align-bottom" style="font-size: 16px; line-height: 40px;">/ Month</small>
+                                            </h1>
+                                            <div style="color: white;">
+                                            <div class="d-flex justify-content-between mb-3"><span>HTML5 & CSS3</span><i class="fa fa-check pt-1" style="color: #Fca311;"></i></div>
+                                            <div class="d-flex justify-content-between mb-3"><span>Bootstrap v5</span><i class="fa fa-check pt-1" style="color: #Fca311;"></i></div>
+                                            <div class="d-flex justify-content-between mb-3"><span>Responsive Layout</span><i class="fa fa-check pt-1" style="color: #Fca311;"></i></div>
+                                            <div class="d-flex justify-content-between mb-2"><span>Cross-browser Support</span><i class="fa fa-check pt-1" style="color: #Fca311;"></i></div>
+                                            <a href="" class="btn rounded-pill py-2 px-4 mt-4" style="background-color: #Fca311; color: white;">Get Started</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div></div>
+                        
+                        <div id="tab-2" class="tab-pane fade p-0">
+                            <div class="row g-4">
+                                <div class="col-lg-4">
+                                    <div class=" rounded" style="background-color: #708090;">
+                                        <div class="border-bottom p-4 mb-4">
+                                            <h4 class=" mb-1" style="color: #Fca311;">Premium Plan</h4>
+                                            <span style="color: white;">Powerful & Awesome Features</span>
+                                        </div>
+                                        <div class="p-4 pt-0">
+                                            <h1 class="mb-3" style="color: #Fca311;">
+                                                <small class="align-top" style="font-size: 22px; line-height: 45px;">$</small>34.99<small
+                                                    class="align-bottom" style="font-size: 16px; line-height: 40px;">/ Month</small>
+                                            </h1>
+                                            <div style="color: white;">
+                                            <div class="d-flex justify-content-between mb-3"><span>HTML5 & CSS3</span><i class="fa fa-check pt-1" style="color: #Fca311;"></i></div>
+                                            <div class="d-flex justify-content-between mb-3"><span>Bootstrap v5</span><i class="fa fa-check pt-1" style="color: #Fca311;"></i></div>
+                                            <div class="d-flex justify-content-between mb-3"><span>Responsive Layout</span><i class="fa fa-check pt-1" style="color: #Fca311;"></i></div>
+                                            <div class="d-flex justify-content-between mb-2"><span>Cross-browser Support</span><i class="fa fa-check pt-1" style="color: #Fca311;"></i></div>
+                                            <a href="" class="btn rounded-pill py-2 px-4 mt-4" style="background-color: #Fca311; color: white;">Get Started</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-4">
+                                <div class=" rounded" style="background-color: #708090;">
+                                    <div class="border-bottom p-4 mb-4">
+                                        <h4 class=" mb-1" style="color: #Fca311;">Premium Plan</h4>
+                                        <span style="color: white;">Powerful & Awesome Features</span>
+                                    </div>
+                                    <div class="p-4 pt-0">
+                                        <h1 class="mb-3" style="color: #Fca311;">
+                                            <small class="align-top" style="font-size: 22px; line-height: 45px;">$</small>34.99<small
+                                                class="align-bottom" style="font-size: 16px; line-height: 40px;">/ Month</small>
+                                        </h1>
+                                        <div style="color: white;">
+                                        <div class="d-flex justify-content-between mb-3"><span>HTML5 & CSS3</span><i class="fa fa-check pt-1" style="color: #Fca311;"></i></div>
+                                        <div class="d-flex justify-content-between mb-3"><span>Bootstrap v5</span><i class="fa fa-check pt-1" style="color: #Fca311;"></i></div>
+                                        <div class="d-flex justify-content-between mb-3"><span>Responsive Layout</span><i class="fa fa-check pt-1" style="color: #Fca311;"></i></div>
+                                        <div class="d-flex justify-content-between mb-2"><span>Cross-browser Support</span><i class="fa fa-check pt-1" style="color: #Fca311;"></i></div>
+                                        <a href="" class="btn rounded-pill py-2 px-4 mt-4" style="background-color: #Fca311; color: white;">Get Started</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4">
+                            <div class=" rounded" style="background-color: #708090;">
+                                <div class="border-bottom p-4 mb-4">
+                                    <h4 class=" mb-1" style="color: #Fca311;">Premium Plan</h4>
+                                    <span style="color: white;">Powerful & Awesome Features</span>
+                                </div>
+                                <div class="p-4 pt-0">
+                                    <h1 class="mb-3" style="color: #Fca311;">
+                                        <small class="align-top" style="font-size: 22px; line-height: 45px;">$</small>34.99<small
+                                            class="align-bottom" style="font-size: 16px; line-height: 40px;">/ Month</small>
+                                    </h1>
+                                    <div style="color: white;">
+                                    <div class="d-flex justify-content-between mb-3"><span>HTML5 & CSS3</span><i class="fa fa-check pt-1" style="color: #Fca311;"></i></div>
+                                    <div class="d-flex justify-content-between mb-3"><span>Bootstrap v5</span><i class="fa fa-check pt-1" style="color: #Fca311;"></i></div>
+                                    <div class="d-flex justify-content-between mb-3"><span>Responsive Layout</span><i class="fa fa-check pt-1" style="color: #Fca311;"></i></div>
+                                    <div class="d-flex justify-content-between mb-2"><span>Cross-browser Support</span><i class="fa fa-check pt-1" style="color: #Fca311;"></i></div>
+                                    <a href="" class="btn rounded-pill py-2 px-4 mt-4" style="background-color: #Fca311; color: white;">Get Started</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Pricing End -->
+    </div>
+</div>
+<div style="margin-left: 90px;">
+<section>
+
+            
+<div class="cor" >
+    <h1 class="h1">Brilliant Ideas<br>
+        That Create Great Value</h1>
+    <div class="box box1"></div>
+    <div class="box box2"></div>
+    <div class="box box3"></div>
+    <div class="box box4"></div>
+    <div class="box box5"></div>
+    <div class="box box6"></div>
+    <div class="box box7"></div>
+    <div class="box box8"></div>
+    <div class="box box9"></div>
+  
+</div>
+</section></div>
+        <!-- Intro Section -->
+        <section class="intro-section" style="background-color: #14213D;" >
+            <div class="intro-content" style="margin-top: 90px;">
+                <h2 style="color: #Fca311; margin-left: 530px;">Hello From Us</h2>
+                <p class="subtitle" style="color: white;">Welcome to our page. Read about our services and team below.</p>
+            </div>
+        </section>
+       
+        <!-- Main Content Section -->
+        <section class="main-section">
+            <div class="text-content" style="margin-left: 90px;">
+                <h3 style="color: #Fca311;">Turning Your Vision into a Successful Visual Identity</h3>
+                <p class="highlight" style="color: #815e24;">Web Designing, Marketing, and Brand Enhancement</p>
+                <p style="color: white;">Our marketing services are designed to help you gain a greater online presence through targeted strategies and visually stunning designs. Whether you need website development, social media management, or full-scale branding, we’ve got you covered!</p>
+                <p style="color: white;">With our team of professionals, you will see measurable growth and improved visibility. Reach out today and let’s bring your vision to life!</p>
+            </div>
+            <div class="image-content">
+                <img src="./Screenshot 2024-09-21 145114.jpg" alt="Marketing Image">
+            </div>
+        </section>
+    </div>
+       </div>
+    <section class="dark-section" style="background-color: #35393d ;">
+        <div class="container">
+            <h2 style="color: #Fca311;">Best Digital Agency In USA</h2>
+            <div class="features">
+                <div class="feature-item">
+                    <i class="fas fa-star" style="color: white;"></i>
+                    <h3 style="color: #Fca311;">Years Of Expertise</h3>
+                    <p>We have worked in a diverse spectrum of industries. We know every business.</p>
+                </div>
+                <div class="feature-item">
+                    <i class="fas fa-rocket" style="color: white;"></i>
+                    <h3 style="color: #Fca311;">Successful Deliveries</h3>
+                    <p>We believe in punctuality with 100% effort.</p>
+                </div>
+                <div class="feature-item">
+                    <i class="fas fa-thumbs-up" style="color: white;"></i>
+                    <h3 style="color: #Fca311;">Satisfied Clients</h3>
+                    <p>Customer feedback is our top priority.</p>
+                </div>
+                <div class="feature-item">
+                    <i class="fas fa-lightbulb" style="color: white;"></i>
+                    <h3 style="color: #Fca311;">Innovative Solutions</h3>
+                    <p>There is no digital problem that we can’t solve.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Light Section with Text and Image -->
+    <section class="light-section" style="background-color: #14213D;">
+        <div class="container">
+            <div class="text-section">
+                <h2 style="color: #Fca311;">One of the fast-paced emerging digital marketing agencies in the US with a high success rate, innovative solutions, and designs.</h2>
+                <ul style="color: white;">
+                    <li><span>Dedicated to your business's digital identity</span></li>
+                    <li><span>Original and error-proof design and services</span></li>
+                    <li><span>Customer support whenever you summon</span></li>
+                </ul>
+            </div>
+            <div class="image-section">
+                <img src="./web00.png" alt="Devices">
+            </div>
+        </div>
+    </section>
+        
+    <!-- Hero Section -->
+    <section class="hero" style="background-color: #14213D;">
+        <h2 style="color: #Fca311; margin-left: 140px ;">Welcome to Our Service</h2>
+        <p>Experience the best quality and service. We are committed to exceeding your expectations!</p>
+        <section class="contact-form">
+        <button type="submit" style="background-color: #Fca311;">Send Message</button>
+   </section> </section>
+
+    <!-- Contact Form Section -->
+    <section class="contact-form-section" style="background-color: #14213D;">
+        <h2 style="color: #Fca311; margin-left: 530px;">Contact Us</h2>
+        <form class="contact-form">
+            <input type="text" name="name" placeholder="Your Name" required>
+            <input type="email" name="email" placeholder="Your Email" required>
+            <textarea name="message" placeholder="Your Message" rows="5" required></textarea>
+            <button type="submit">Send Message</button>
+        </form>
+    </section>
+
+     <!-- Testimonial Start -->
+     <div class="hj" style="background-image: url(./background.png); ">
+        <br><br><br><br><br><br><br><br><br><br>
+         <div class="row" style=" margin-left: 360px; margin-top: -100px; width: 70%;">
+             <div class="col-md-offset-2 col-md-8 ">
+                 <h1 style="margin-left: 230px;">TESTIMONIAL</h1>
+                 <div id="testimonial-slider" class="owl-carousel">
+                     <div class="testimonial" style="margin-top: -90px;">
+                         <img src="Green Modern Web Design Studio Logo.png" alt="" width="300px">
+                         <p class="description">
+                             The website looks amazing! It exceeded all my expectations. Great job, team!
+                         </p>
+                         <h3 class="title">WILLIAMSON</h3>
+                         <span class="post">Web Developer</span>
+                     </div>
+  
+                     <div class="testimonial">
+                         <img src="Black Global Tech Internet Company Logo.png" alt="" width="300px">
+                         <p class="description">
+                             The professionalism and attention to detail were outstanding. Highly recommend!
+                         </p>
+                         <h3 class="title">KATRINA</h3>
+                         <span class="post">Web Designer</span>
+                         
+                     </div>
+  
+                     <div class="testimonial">
+                         <img src="Black and White Circle Business Logo.png" alt="" width="300px">
+                         <p class="description">
+                             I’ve worked with many developers, but this experience was top-notch.
+                         </p>
+                         <h3 class="title">JEREMY CLEN</h3>
+                         <span class="post">Web Developer</span>
+                     </div>
+                     <div class="testimonial">
+                         <img src="Blue Modern Digital Company Logo.png" alt="" width="300px">
+                         <p class="description">
+                             Our website went live on time, and the results are fantastic. Thank you
+                         </p>
+                         <h3 class="title">JEREMY CLEN</h3>
+                         <span class="post">Web Developer</span>
+                     </div>
+                     <div class="testimonial">
+                         <img src="Dark Blue Beige Circle Y2K Illustrative Class Logo.png" alt="" width="300px">
+                         <p class="description">
+                             Their design skills are second to none. Our web traffic has doubled!
+                         </p>
+                         <h3 class="title">JEREMY CLEN</h3>
+                         <span class="post">Web Developer</span>
+                     </div>
+                     <div class="testimonial">
+                         <img src="Black Illustrative Education Logo.png" alt="" width="300px">
+                         <p class="description">
+                             Excellent communication and even better execution. Truly impressed.
+                         </p>
+                         <h3 class="title">JEREMY CLEN</h3>
+                         <span class="post">Web Developer</span>
+                     </div>
+                 </div>
+             </div>
+         </div>
+     </div>
+ </div>
+</div>     
+    <!-- Testimonial End -->
+     
+        <!-- Testimonial End -->
+
+
+        <!-- Contact Start -->
+        <div class="container-xxl py-5" id="contact">
+            <div class="container py-5 px-lg-5">
+                <div class="text-center wow fadeInUp" data-wow-delay="0.1s">
+                    <h5 class=" fw-medium" style="color: white;">Contact Us</h5>
+                    <h1 class="mb-5" style="color: #Fca311;">Get In Touch!</h1>
+                </div>
+                <div class="row justify-content-center">
+                    <div class="col-lg-9">
+                        <div class="wow fadeInUp" data-wow-delay="0.3s">
+                            <p class="text-center mb-4" style="color: white;">The contact form is currently inactive. Get a functional and working contact form with Ajax & PHP in a few minutes. Just copy and paste the files, add a little code and you're done. <a href="" style="color: #Fca311;">Download Now</a>.</p>
+                            <form>
+                                <div class="row g-3">
+                                    <div class="col-md-6">
+                                        <div class="form-floating">
+                                            <input type="text" class="form-control" id="name" placeholder="Your Name">
+                                            <label for="name">Your Name</label>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div class="form-floating">
+                                            <input type="email" class="form-control" id="email" placeholder="Your Email">
+                                            <label for="email">Your Email</label>
+                                        </div>
+                                    </div>
+                                    <div class="col-12">
+                                        <div class="form-floating">
+                                            <input type="text" class="form-control" id="subject" placeholder="Subject">
+                                            <label for="subject">Subject</label>
+                                        </div>
+                                    </div>
+                                    <div class="col-12">
+                                        <div class="form-floating">
+                                            <textarea class="form-control" placeholder="Leave a message here" id="message" style="height: 150px"></textarea>
+                                            <label for="message">Message</label>
+                                        </div>
+                                    </div>
+                                    <div class="col-12 text-center">
+                                        <button class="btn rounded-pill py-3 px-5" type="submit" style="background-color: #Fca311; color: white;">Send Message</button>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Contact End -->
+        
+
+        <!-- Footer Start -->
+        <div >
+            <div class="container py-5 px-lg-5">
+                <div class="row g-5">
+                    <div class="col-md-6 col-lg-3" style="color: white;">
+                        <h4 class=" mb-4" style="color: #Fca311;">Address</h4>
+                        <p><i class="fa fa-map-marker-alt me-3"></i>123 Street, New York, USA</p>
+                        <p><i class="fa fa-phone-alt me-3"></i>+012 345 67890</p>
+                        <p><i class="fa fa-envelope me-3"></i>info@example.com</p>
+                        <div class="d-flex pt-2">
+                            <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-twitter"></i></a>
+                            <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-facebook-f"></i></a>
+                            <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-instagram"></i></a>
+                            <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-linkedin-in"></i></a>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-3">
+                        <h4 class=" mb-4" style="color: #Fca311;">Quick Link</h4>
+                        <a class="btn text-white btn-link" href="">About Us</a>
+                        <a class="btn text-white btn-link" href="">Contact Us</a>
+                        <a class="btn text-white btn-link" href="">Privacy Policy</a>
+                        <a class="btn text-white btn-link" href="">Terms & Condition</a>
+                        <a class="btn text-white btn-link" href="">Career</a>
+                    </div>
+                    <div class="col-md-6 col-lg-3">
+                        <h4 class=" mb-4" style="color: #Fca311;">Popular Link</h4>
+                        <a class="btn text-white btn-link" href="">About Us</a>
+                        <a class="btn text-white btn-link" href="">Contact Us</a>
+                        <a class="btn text-white btn-link" href="">Privacy Policy</a>
+                        <a class="btn text-white btn-link" href="">Terms & Condition</a>
+                        <a class="btn text-white btn-link" href="">Career</a>
+                    </div>
+                    <div class="col-md-6 col-lg-3">
+                        <h4 class="mb-4" style="color: #Fca311;">Newsletter</h4>
+                        <p style="color: white;">Lorem ipsum dolor sit amet elit. Phasellus nec pretium mi. Curabitur facilisis ornare velit non vulpu</p>
+                        <div class="position-relative w-100 mt-3">
+                            <input class="form-control border-0 rounded-pill w-100 ps-4 pe-5" type="text" placeholder="Your Email" style="height: 48px;">
+                            <button type="button" class="btn shadow-none position-absolute top-0 end-0 mt-1 me-2"><i class="fa fa-paper-plane text-primary-gradient fs-4"></i></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="container px-lg-5">
+                <div class="copyright">
+                    <div class="row">
+                        <div class="col-md-6 text-center text-white text-md-start mb-3 mb-md-0">
+                            &copy; <a class="border-bottom" href="#" style="color: white;">Akc</a>, All Right Reserved. 
+							
+						
+							Designed By <a class="border-bottom" href=""></a>
+                            </br>
+                            Distributed By <a class="border-bottom" href="" target="_blank"></a>
+                        </div>
+                        <div class="col-md-6 text-center text-md-end">
+                            <div class="footer-menu" style="color: white;">
+                                <a href="" style="color: white;">Home</a>
+                                <a href="" style="color: white;">Cookies</a>
+                                <a href="" style="color: white;">Help</a>
+                                <a href="" style="color: white;">FQAs</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Footer End -->
+
+
+        <!-- Back to Top -->
+        <a href="#" class="btn btn-lg btn-lg-square back-to-top pt-2" style="background-color: #Fca311;"><i class="bi bi-arrow-up text-white"></i></a>
+    </div>
+</div>
+    <!-- JavaScript Libraries -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="lib/wow/wow.min.js"></script>
+    <script src="lib/easing/easing.min.js"></script>
+    <script src="lib/waypoints/waypoints.min.js"></script>
+    <script src="lib/counterup/counterup.min.js"></script>
+    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+
+    <!-- Template Javascript -->
+    <script src="js/main.js"></script>
+
+    <!-- JavaScript Libraries -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="lib/wow/wow.min.js"></script>
+    <script src="lib/easing/easing.min.js"></script>
+    <script src="lib/waypoints/waypoints.min.js"></script>
+    <script src="lib/counterup/counterup.min.js"></script>
+    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+
+    <!-- Template Javascript -->
+    <script src="js/main.js"></script>
+
+
+    <script type="text/javascript" src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/owl-carousel/1.3.3/owl.carousel.min.js"></script>d
+<script>
+    
+$(document).ready(function(){
+    $("#testimonial-slider").owlCarousel({
+        items:1,
+        itemsDesktop:[1000,1],
+        itemsDesktopSmall:[979,1],
+        itemsTablet:[768,1],
+        pagination:true,
+        navigation:true,
+        navigationText:["",""],
+        slideSpeed:1000,
+        autoPlay:true
+    });
+});    
+    
+    </script>
+
+</body>
+
+</html>

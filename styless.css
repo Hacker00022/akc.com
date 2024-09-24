@@ -1,0 +1,398 @@
+/* General Styling */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Montserrat', sans-serif;
+  background: linear-gradient(120deg, #f1eeee, #f6f8f8);
+  color: #000;
+  height: 100vh;
+  overflow: hidden;
+}
+
+h1 {
+  font-size: 120px;
+  font-style:  oblique;
+  font-weight: 600;
+  line-height: 0.9;
+  color: #e7e6e6;
+  font-family: "Fascinate Inline", system-ui;
+  
+}
+
+h1 span {
+  display: inline-block;
+  animation: slide-up 2s cubic-bezier(0.77, 0, 0.175, 1) forwards;
+}
+
+p {
+  font-size: 1.2rem;
+  margin-top: 20px;
+}
+
+a {
+  text-decoration: none;
+  color: #000;
+}
+
+/* Text Animation */
+@keyframes slide-up {
+  0% {
+    transform: translateX(-100%);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+/* Navbar */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  z-index: 1000;
+}
+
+.navbar .logo img{
+  width: 110px;
+  object-fit: cover;
+  border: 3px solid black;
+}
+
+/* Menu Toggle with Circle Border */
+.menu-toggle {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  transition: all 0.5s ease;
+  width: 50px;  /* Set a fixed width */
+  height: 50px; /* Set a fixed height */
+  border: 2px solid #000; /* Create the circle outline */
+  border-radius: 50%; /* Make the button circular */
+  position: relative; /* Positioning for absolute bar centering */
+}
+
+/* Styling for the Menu Bars */
+.menu-toggle .bar {
+  width: 20px;  /* Adjust the width of the bars */
+  height: 2px;  /* Adjust the height of the bars */
+  background-color: #000;  /* Color of the bars */
+  margin: 3px 0;
+  transition: all 0.4s ease;
+}
+
+/* Active state - Transform to Cross */
+.menu-toggle.active .bar:nth-child(1) {
+  transform: rotate(45deg) translate(3px, 3px);
+}
+
+.menu-toggle.active .bar:nth-child(2) {
+  opacity: 0;
+}
+
+.menu-toggle.active .bar:nth-child(3) {
+  transform: rotate(-45deg) translate(3px, -3px);
+}
+
+/* Overlay Menu */
+.overlay {
+  position: fixed;
+  height: 85vh; /* Adjusted for partial screen */
+  width: 70vw; /* Adjusted for partial screen */
+  background-color: rgba(255, 255, 255, 0.95);
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  transition: 0.4s ease-in-out;
+  z-index: 1000;
+  border-radius: 30px; /* Rounded corners */
+  opacity: 0;
+  pointer-events: none;
+}
+
+.overlay.active {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+.overlay-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  text-align: center;
+}
+
+.overlay-content ul {
+  list-style: none;
+}
+
+.overlay-content ul li {
+  margin: 20px 0;
+}
+
+.overlay-content ul li a {
+  font-size: 2rem;
+  text-transform: uppercase;
+  font-weight: 700;
+  color: #000;
+}
+
+.overlay-content .start-project-btn {
+  margin-top: 30px;
+  padding: 10px 30px;
+  border: 2px solid #000;
+  font-size: 1rem;
+  text-transform: uppercase;
+  color: #000;
+  display: inline-block;
+  transition: 0.3s;
+}
+
+.overlay-content .start-project-btn:hover {
+  background-color: #000;
+  color: #fff;
+}
+
+.close-btn {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  font-size: 3rem;
+  cursor: pointer;
+  color: #000;
+}
+
+/* Hero Section */
+.hero {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: left;
+}
+
+.hero h1 {
+  color: #000;
+}
+
+.hero p {
+  color: #000;
+  font-weight: 400;
+}
+
+/* Responsive Styling */
+@media (max-width: 1024px) {
+  .hero h1 {
+    font-size: 4.5rem;
+  }
+
+  .overlay-content ul li a {
+    font-size: 1.8rem;
+  }
+
+  /* Menu Toggle */
+  .menu-toggle {
+    width: 45px;
+    height: 45px;
+  }
+}
+
+@media (max-width: 768px) {
+  .navbar .logo a {
+    font-size: 1.3rem;
+  }
+
+  .menu-toggle .bar {
+    width: 22px;
+  }
+
+  .hero h1 {
+    font-size: 3.5rem;
+  }
+
+  .overlay {
+    width: 80vw;
+    height: 80vh;
+  }
+
+  .overlay-content ul li a {
+    font-size: 1.6rem;
+  }
+
+  .overlay-content .start-project-btn {
+    font-size: 0.9rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .navbar {
+    padding: 1rem;
+  }
+
+  .menu-toggle .bar {
+    width: 20px;
+  }
+
+  .hero h1 {
+    font-size: 2.5rem;
+  }
+
+  .hero p {
+    font-size: 1rem;
+  }
+
+  .overlay {
+    width: 90vw;
+    height: 90vh;
+    border-radius: 20px;
+  }
+
+  .overlay-content ul li a {
+    font-size: 1.4rem;
+  }
+
+  .overlay-content .start-project-btn {
+    font-size: 0.8rem;
+    padding: 8px 20px;
+  }
+
+  .close-btn {
+    font-size: 2.5rem;
+  }
+}
+
+
+.animated-bg {
+  width: 100vw;
+  height: 100vh;
+  background-image: url('./download.png'); /* Replace with your image */
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: bottom; /* Locks the bottom position */
+  animation: move 6s infinite linear, top-glow 2.5s infinite alternate, side-glow 3s infinite alternate;
+}
+
+/* Keyframes to move the background from bottom to top */
+@keyframes move {
+  0% {
+    background-position: bottom;
+  }
+  100% {
+    background-position: top;
+  }
+}
+
+/* Keyframes for the glow effect only on the top */
+@keyframes top-glow {
+  0% {
+    filter: brightness(1) contrast(1);
+    box-shadow: none;
+  }
+  100% {
+    filter: brightness(1.6) contrast(1.4);
+    box-shadow: 0px -20px 40px rgba(242, 1, 250, 0.7); /* Glow effect from the top */
+  }
+}
+
+/* Keyframes for the blue glow effect on both left and right */
+@keyframes side-glow {
+  0% {
+    box-shadow: none;
+  }
+  100% {
+    box-shadow: -20px 0px 40px rgba(0, 121, 242, 0.7), 20px 0px 40px rgba(0, 121, 242, 0.7); /* Blue glow from left and right */
+  }
+}
+
+
+
+
+
+
+    .nav_links {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+     
+      padding: 10px;
+    }
+    
+    .nav_links a {
+      color: rgb(0, 0, 0);
+      text-decoration: none;
+      padding: 14px 20px;
+      text-align: center;
+    }
+    
+    .nav_links a:hover {
+      background-color: #e7e6e6;
+      border-radius: 4px;
+    }
+    
+    .menu-icon {
+      display: none;
+      color: white;
+      font-size: 24px;
+      cursor: pointer;
+    }
+    
+    /* Desktop view */
+    @media (min-width: 768px) {
+      .nav_links {
+        justify-content: flex-start;
+      }
+    
+      .nav_links a {
+        margin-right: 20px;
+      }
+    }
+    
+    /* Mobile view */
+    @media (max-width: 767px) {
+      .nav_links {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+    
+      .nav_links a {
+        display: none;
+        width: 100%;
+        text-align: left;
+      }
+    
+      .menu-icon {
+        display: block;
+      }
+    
+      .nav_links.open a {
+        display: block;
+      }
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
